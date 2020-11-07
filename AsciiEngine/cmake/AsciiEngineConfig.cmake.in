@@ -1,0 +1,11 @@
+get_filename_component(ASCIIENGINE_CMAKE_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
+include(CMakeFindDependencyMacro)
+
+list(APPEND CMAKE_MODULE_PATH ${ASCIIENGINE_CMAKE_DIR})
+
+
+if(NOT TARGET AsciiEngine::AsciiEngine)
+    include("${ASCIIENGINE_CMAKE_DIR}/AsciiEngineTargets.cmake")
+endif()
+
+set(JSONUTILS_lIBRARIES AsciiEngine::AsciiEngine)

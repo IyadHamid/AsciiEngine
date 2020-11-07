@@ -1,0 +1,5 @@
+.vs
+AsciiEngine/out
+AsciiEngine/CMakeSettings.json
+apps/out
+apps/CMakeSettings.json
